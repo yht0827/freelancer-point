@@ -1,9 +1,9 @@
-package com.example.freelancerapi;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.example")
+@SpringBootApplication
 public class FreelancerApiApplication {
 
 	public static void main(String[] args) {
