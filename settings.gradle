@@ -1,1 +1,4 @@
 rootProject.name = 'freelancer-point'
+
+include 'server:freelancer-api'
+include 'common:entity'

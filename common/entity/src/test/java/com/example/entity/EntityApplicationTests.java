@@ -1,10 +1,10 @@
-package com.example.freelancerpoint;
+package com.example.entity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FreelancerPointApplicationTests {
+class EntityApplicationTests {
 
 	@Test
 	void contextLoads() {
