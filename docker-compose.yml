@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  freelancer-api:
+    build:
+      context: ./
+      dockerfile: server/freelancer-api/Dockerfile
+    container_name: freelancer-api
+    ports:
+      - "8080:8080"  # Host:Container
+    networks:
+      - server
+
+  point-api:
+    build:
+      context: ./
+      dockerfile: server/point-api/Dockerfile
+    container_name: point-api
+    ports:
+      - "8081:8081"  # Host:Container
+    networks:
+      - server
+
+networks:
+  server:
+    driver: bridge
