@@ -27,6 +27,9 @@ public class Freelancer extends BaseTimeEntity {
 	private String email;
 
 	@Column
+	private String name;
+
+	@Column
 	private String password;
 
 	@Column(name = "view_count")
@@ -36,11 +39,29 @@ public class Freelancer extends BaseTimeEntity {
 	private Long point;
 
 	@Builder
-	public Freelancer(Long id, String email, String password, Long viewCount, Long point) {
+	public Freelancer(Long id, String email, String name, String password, Long viewCount, Long point) {
 		this.id = id;
 		this.email = email;
+		this.name = name;
 		this.password = password;
 		this.viewCount = viewCount;
 		this.point = point;
+	}
+
+	public void updateViewCount() {
+		this.viewCount = this.viewCount + 1;
+	}
+
+	@Override
+	public String toString() {
+		return "Freelancer{" +
+			"id=" + id +
+			", email='" + email + '\'' +
+			", name='" + name + '\'' +
+			", password='" + password + '\'' +
+			", viewCount=" + viewCount +
+			", point=" + point +
+			", created=" + super.getCreatedAt() +
+			'}';
 	}
 }

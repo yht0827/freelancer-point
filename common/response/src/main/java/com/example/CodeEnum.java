@@ -8,6 +8,7 @@ import lombok.Getter;
 public enum CodeEnum {
 
 	SUCCESS("0200", "SUCESS"),
+	NO_FREELANCER("1111", "NO_FREELANCER"),
 	UNKNOWN_ERROR("9999", "UNKNOWN_ERROR");
 
 	private final String code;
