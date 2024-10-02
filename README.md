@@ -33,7 +33,7 @@ freelancer-point-project
 ## 사용 오픈소스
 
 - apache commons
-    - 문자열 처리 용이 (StringUtils)
+    - 문자열 처리 (StringUtils)
 
 ## 사용 기술
 

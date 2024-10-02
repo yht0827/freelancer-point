@@ -17,7 +17,6 @@ import org.springframework.data.support.PageableExecutionUtils;
 
 import com.example.entity.freelancer.Freelancer;
 import com.example.repository.freelancer.FreelancerRepository;
-import com.example.repository.freelancer.dto.response.FreelancerDetailResponse;
 import com.example.repository.freelancer.dto.response.FreelancerResponse;
 import com.example.service.FreelancerServiceImpl;
 
