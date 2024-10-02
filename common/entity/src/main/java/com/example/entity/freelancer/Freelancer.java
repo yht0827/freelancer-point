@@ -52,6 +52,10 @@ public class Freelancer extends BaseTimeEntity {
 		this.viewCount = this.viewCount + 1;
 	}
 
+	public void addPoint(Long point) {
+		this.point += point;
+	}
+
 	@Override
 	public String toString() {
 		return "Freelancer{" +

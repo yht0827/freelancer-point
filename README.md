@@ -11,8 +11,8 @@ freelancer-point-project
 │   └── response
 │
 ├── server
-│   └── freelancer-api
-│   └── pay-api
+│   └── freelancer-api port: 8080
+│   └── point-api port: 8081
 │
 └── settings.gradle
 ```
@@ -26,6 +26,8 @@ freelancer-point-project
 - 프리랜서 상세 조회
     - 조회수 증가(view Count)
     - 조회수 증가 방지(쿠키에 id값 저장)
+- 토스페이 결제 API 연동
+- 결제 내역 저장
 - 테스트 코드 작성
 
 ## 사용 오픈소스
